@@ -26,9 +26,9 @@ public class Equations
        System.out.println("Eq2: "+a21+"*x1+"+a22+"*x2="+b2);
        
        //analysing and solution part
-       if (((a11*a22)-(a12*a21))!=0)//term of single solution
+       if (((a11*a22)-(a12*a21))!=0)//term of single solution, determinant other than zero
        {
-           //declaring and calculation of x1 and x2 according to provided formula
+           //declaring and calculation of x1 and x2 according to determinant formula
            double x1 = (double)(((b1*a22)-(b2*a12))/(double)((a11*a22)-(a12*a21)));
            double x2 = (double)(((b2*a11)-(b1*a21))/(double)((a11*a22)-(a12*a21)));
            //round results to 3 digits after dot
